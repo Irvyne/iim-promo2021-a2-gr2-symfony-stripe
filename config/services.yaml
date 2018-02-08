@@ -2,6 +2,8 @@
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     locale: 'en'
+    stripe_pk: '%env(STRIPE_PUBLIC_KEY)%'
+    stripe_sk: '%env(STRIPE_SECRET_KEY)%'
 
 services:
     # default configuration for services in *this* file
